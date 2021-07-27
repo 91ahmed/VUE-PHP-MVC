@@ -1,0 +1,14 @@
+{
+    "name": "ahmed/php-vue-mvc",
+    "description": "PHP Vue Js MVC Framework",
+    "type": "project",
+    "require": {
+        "jenssegers/blade": "^1.4",
+        "firebase/php-jwt": "^5.4",
+        "guzzlehttp/guzzle": "7.0",
+        "swiftmailer/swiftmailer": "^6.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "9.5"
+    }
+}
