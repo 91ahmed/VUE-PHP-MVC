@@ -16,7 +16,7 @@
 
 		public function addFile ($filePath)
 		{
-			$filePath = str_replace(['/','\\'], DS, $filePath);
+			$filePath = str_replace(['/','\\'], DIRECTORY_SEPARATOR, $filePath);
 			require (ROOT.$filePath.'.php');
 		}
 	}

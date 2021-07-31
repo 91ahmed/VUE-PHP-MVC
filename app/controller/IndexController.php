@@ -2,6 +2,7 @@
 
 	namespace App\Controller;
 
+	use Modules\Validation\Validator;
 	use App\Model\User;
 	
 	class IndexController
@@ -14,6 +15,16 @@
 		public function index ()
 		{
 			//$users = User::query()->all()->get();
+
+			$valid = new Validator();
+			$valid->input('firstname')->required()->dateDMY();
+			$valid->input('lastname')->required()->alpha();
+
+			/*
+			$valid->customError('error', 'database not found!');
+			*/
+
+			$valid->errors();
 
 			$users = [
 				['username' => 'ahmed'],
