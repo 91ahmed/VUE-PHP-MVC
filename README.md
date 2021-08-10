@@ -1,4 +1,4 @@
-A high-performance MVC framework built by php and vuejs
+A high-performance MVC framework for building web applications in php and vuejs
 
 
 Composer Packages
